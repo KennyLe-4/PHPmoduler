@@ -11,56 +11,64 @@ o dersom flere deltakere har den laveste poengsummen, skal alle disse fjernes
 Når det er én deltaker igjen, skal navnet på vinneren annonseres.  
 */
 
-$deltakere = array(
+    $ListeOverDeltakere = array(
     'Adrian' => 0,
     'Simen' => 0,
     'Emanuel' => 0,
     'Kenny' => 0,
     'Kevin' => 0,
-    'Sondre' => 0,
+    'Kamila' => 0,
     'Peter' => 0,
-    'Markus' => 0,
-    'Ulrik' => 0,
-    'Steffen' => 0
-);
+    'Magnus' => 0,
+    'Livan' => 0,
+    'Mustafa' => 0
+   
+    );
 
-echo "Velkommen til denne konkurransen!<br><br>";
+echo "Følgende er med i konkurransen: <br> "; 
 
-// Bruker en for-loop som går opp til 9 runder. Da det er 10 deltakere og en spiller vinner. 
-for ($x = 1; $x <= 9; $x++) {
-
-    echo "Runde 1: .$x . <br>";
-
-    echo "<br>TALLENE TREKKES!<br>";
-
-    foreach ($deltakere as &$poeng) {
-        $poeng = rand(1, 50);
-    }
-
-    asort($deltakere);
-
-    echo "<br>";
-
-    foreach ($deltakere as $navn => $poeng) {
-        echo $navn . " har " . $poeng . " poeng.<br>";
-    }
-
-    //bruker array_flip for å bytte plass på nøkler og verdier.
-    //array_shift, som returnerer første verdien i rekken
-    //får jeg nøkkelen til $deltaker, altså navnet og ikke verdien til spilleren.
-    $flipped = array_flip($deltakere);
-    $fjernet = array_shift($flipped);
-
-    unset($deltakere[$fjernet]);
-
-    echo "<br>";
-    echo $fjernet . " hadde minst poengsum, og ryker dermed ut av konkurransen!<br><br>";
-
-    //skriver ut siste deltakeren.
-    if (count($deltakere) <= 1) {
-        echo $navn . " er eneste spiller igjen, og har vunnet konkurransen!";
-    }
+foreach($ListeOverDeltakere as $nameOnPlayer => $poeng) {
+    echo $nameOnPlayer . "<br>";
 }
 
+echo "<br>"; 
 
-?>
+$runde = 1; 
+
+do {
+    echo "Runde: " .$runde++ . "<br>" . "Deltakerne har følgende poeng: <br><br>"; 
+
+    foreach($ListeOverDeltakere as $nameOnPlayer => $poeng) {
+       $ListeOverDeltakere[$nameOnPlayer] = rand(1, 50);
+    
+    
+       echo $nameOnPlayer . " har  $ListeOverDeltakere[$nameOnPlayer] poeng" . "<br>"; 
+    }
+    
+
+$min = min($ListeOverDeltakere);
+
+foreach($ListeOverDeltakere as $nameOnPlayer => $poeng) {
+    if($poeng == $min) {
+        array_splice($ListeOverDeltakere, 0, 1);
+        echo "Spiller med navn: " .$nameOnPlayer . ", har minst poeng og ble kastet ut. <br>"; 
+    }
+}
+echo "<br>"; 
+
+}
+while (count($ListeOverDeltakere) > 1); 
+foreach ($ListeOverDeltakere as $nameOnPlayer => $poeng) {
+    $vinner = $nameOnPlayer;
+}
+
+echo "Vinneren av konkurransen er: " . $nameOnPlayer; 
+
+
+
+
+
+
+
+
+
