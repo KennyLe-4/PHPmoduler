@@ -6,6 +6,8 @@ function vaskingAvtagger($var)
   $var = htmlentities($var);
   return $var;
 }
+$epost = filter_var($epost, FILTER_SANITIZE_EMAIL);
+
 
 
 
@@ -27,6 +29,13 @@ if(isset($_REQUEST['registrer']))
     {
         echo $key . ": "  . $value . "<br>";
 }
+
+if(filter_var($_REQUEST['epost'], FILTER_VALIDATE_EMAIL)) {
+	echo $_REQUEST['epost'] . " har gyldig e-postadresse-format.";
+} else {
+	echo $_REQUEST['epost'] . " har ikke gyldig e-postadresse-format.";
+}
+
 
 $skjema = array(
   'Fornavn' => $_REQUEST['fnavn'], 
