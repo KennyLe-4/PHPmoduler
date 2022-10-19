@@ -33,7 +33,7 @@ if (isset($_REQUEST['dekrypter'])) {
             <input type="submit" name="dekrypter" value="Dekrypter">
         </form>
     </pre>
-    <p>Prøv å dekryptere denne: Gcnqorcnqoacnqotcnqoucnqolcnqoecnqorcnqoecnqorcnqo,cnqo cnqovcnqoecnqolcnqolcnqoycnqokcnqokcnqoecnqotcnqo cnqodcnqoecnqokcnqorcnqoycnqopcnqotcnqoecnqorcnqoicnqoncnqogcnqo!</p>
+    <p>Prøv å dekryptere denne: Gqwklorqwkloaqwklotqwklouqwklolqwkloeqwklorqwkloeqwklorqwklo,qwklo qwklovqwkloeqwklolqwklolqwkloyqwklokqwklokqwkloeqwklotqwklo qwklodqwkloeqwklokqwklorqwkloyqwklopqwklotqwkloeqwklorqwkloiqwklonqwklogqwklo! </p>
 </body>
 
 </html>
