@@ -16,7 +16,7 @@
 <div class = "center"> 
     <h1>Velkommen til siden min</h1>
     <h2>Nedenfor kan du se oppgavene mine</h2>
-    <a href="Opg1.php"> Oppgave 1 - standardavvik </a>
+    <a href="opg5.1.php"> Oppgave 1 - standardavvik </a>
     <br>
     <a href="Opg2.php">Oppgave 2 - plan for filstruktur og klassebibliotek </a>
     <br>
@@ -24,7 +24,7 @@
     <br>
     <a href="Opg4.php">Oppgave 4 - god programmeringsskikk  </a>
     <br>
-    <a href="Opg5.php">Oppgave 5 - kryptering </a>
+    <a href="opg5.5.php">Oppgave 5 - kryptering </a>
 
 </div>
 <body>
