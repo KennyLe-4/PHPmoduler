@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Lag en matrise med indeks fra 0-9. Du bestemmer selv innholdet i matrisen. Lag deretter et script som 
+endrer  alle  verdiene  i  matrisen  til  noe  annet som  du  selv  bestemmer.  Deretter  skal  du  endre  alle 
+indeksene i matrisen slik at hver indeks blir 10 høyere (f.eks. indeks 0 skal nå bli indeks 10 osv.).  Hint: 
+sjekk ut innebygde funksjoner i PHP for dette. -->
+
 <?php
 // Lag en matrise med indeks fra 0-9. Du bestemmer selv innholdet i matrisen
 $cars = ['Audi', 'Volvo', 'Lamborghini', 'Tesla', 'BMW', 'Toyota', 'Mercedes', 'Honda', 'Mazda', 'Bugatti'];

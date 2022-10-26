@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+<!--  Lag et lite script som definerer to variabler: $alder og $navn. Bruk en if-setning for å skrive ut «navn 
+er alder og dermed [ikke] myndig» basert på om personen er under eller  over 18 år. -->
 
 <?php
 $age = 16;

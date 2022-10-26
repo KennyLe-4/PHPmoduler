@@ -1,4 +1,12 @@
 <?php
+/*Tenk deg et sjakkbrett med hvetekorn på. For hver rute på brettet, fordobler du antall hvetekorn. For 
+eksempel: rute 1 har ett hvetekorn, rute 2 har to hvetekorn, rute 3 har fire hvetekorn og så videre. Lag 
+et script som viser antall hvetekorn for hver eneste rute på sjakkbrettet.  Når antall hvetekorn passerer 
+én milliard, skal tallet vises tekstuelt. For eksempel: 1 milliard, 73 millioner, 741 tusen, 8 hundre og 24.
+*/
+
+// Used modulo operator 
+
     $ris = 1;
 
         for($rute=1; $rute<=64; $rute++){

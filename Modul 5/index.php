@@ -18,13 +18,15 @@
     <h2>Nedenfor kan du se oppgavene mine</h2>
     <a href="opg5.1.php"> Oppgave 1 - standardavvik </a>
     <br>
-    <a href="Opg2.php">Oppgave 2 - plan for filstruktur og klassebibliotek </a>
+    <a href="opg5.2.php">Oppgave 2 - plan for filstruktur og klassebibliotek </a>
     <br>
-    <a href="Opg3.php">Oppgave 3 -  kommentering </a>
+    <a href="Opg5.3.php">Oppgave 3 -  kommentering </a>
     <br>
-    <a href="Opg4.php">Oppgave 4 - god programmeringsskikk  </a>
+    <a href="opg5.4.php">Oppgave 4 - god programmeringsskikk  </a>
     <br>
     <a href="opg5.5.php">Oppgave 5 - kryptering </a>
+    <br>
+   
 
 </div>
 <body>

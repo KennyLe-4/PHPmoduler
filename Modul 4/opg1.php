@@ -5,11 +5,28 @@ Lag et lite script som oppretter en matrise med heltall som indeks. Matrisen ska
 løkke (som du lærte i forrige modul). 
 */
 
-$array = [0, 3, 5, 7, 8, 15]; 
-print_r($array); 
-echo "<br><br>";
+// Made an array to store the index 0, 3, 5, 7, 8 og 15 with different names as values 
 
-foreach($array as $key => $value) {
+$array = array(
+    0 => 'Kenny',
+    3 => 'Ole',
+    5 => 'Petter',
+    7 => 'Dennis',
+    8 => 'Kamila',
+    15 => 'Hanne',
+    );
+
+//$flipped = array_flip($array);
+//print_r($flipped); 
+echo "<pre>";
+print_r($array);
+echo "</pre>";
+echo "<br><br>";
+echo "Matrisen inneholder disse navnene: <br>";
+
+//foreach loop that prints out the array
+foreach($array as $key => $value) 
+{
     echo $value . "<br>";
 }
 

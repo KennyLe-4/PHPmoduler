@@ -1,15 +1,15 @@
 <?php
 // Include this file 
 include 'functions.php';
-//inkluderer filen funksjoner.php, for å benytte funksjonen gjennomsnitt og standaravvik som er laget der.
+//inkluderer filen functions.php, for å benytte funksjonen gjennomsnitt og standaravvik som er laget der.
 
-//to isset funksjoner, bestemmer hvilken av regneoperasjonen som skal utføres. hvilken knapp er trykt?
+//to isset funksjoner, bestemmer hvilken av regneoperasjonen som skal utføres. Hvilken knapp er trykt?
 if(isset($_REQUEST['gjennomsnitt'])){
-    echo "The average of this numbers ".$_REQUEST['tall1'].", ".$_REQUEST['tall2'].", ".$_REQUEST['tall3'].", ".$_REQUEST['tall4']." is: " .
+    echo "The average of these numbers ".$_REQUEST['tall1'].", ".$_REQUEST['tall2'].", ".$_REQUEST['tall3'].", ".$_REQUEST['tall4']." are: " .
     averageOfSum($_REQUEST['tall1'],$_REQUEST['tall2'],$_REQUEST['tall3'],$_REQUEST['tall4'],);
 
-}elseif(isset($_REQUEST['standar'])){
-    echo "Standardavvik av tallene ".$_REQUEST['tall1'].", ".$_REQUEST['tall2'].", ".$_REQUEST['tall3'].", ".$_REQUEST['tall4']." er: ".
+}elseif(isset($_REQUEST['standard'])){
+    echo "The standard deviation of these numbers ".$_REQUEST['tall1'].", ".$_REQUEST['tall2'].", ".$_REQUEST['tall3'].", ".$_REQUEST['tall4']." are: ".
     standardDeviation($_REQUEST['tall1'],$_REQUEST['tall2'],$_REQUEST['tall3'],$_REQUEST['tall4'],);
     
 }else {
@@ -33,12 +33,12 @@ if(isset($_REQUEST['gjennomsnitt'])){
 <body>
     <pre>
     <form method="post" action="">
-      Tall 1: <input type="text" name="tall1" placeholder="Tall 1" required><br>
-      Tall 2: <input type="text" name="tall2" placeholder="Tall 2" required><br>
-      Tall 3: <input type="text" name="tall3" placeholder="Tall 3" required><br>
-      Tall 4: <input type="text" name="tall4" placeholder="Tall 4" required><br>
-      <input type="submit" name="gjennomsnitt" value="Gjennomsnitt">
-      <input type="submit" name="standar" value="Standardavvik">
+      Number 1: <input type="text" name="tall1" placeholder="Number 1" required><br>
+      Number 2: <input type="text" name="tall2" placeholder="Number 2" required><br>
+      Number 3: <input type="text" name="tall3" placeholder="Number 3" required><br>
+      Number 4: <input type="text" name="tall4" placeholder="Number 4" required><br>
+      <input type="submit" name="gjennomsnitt" value="Average">
+      <input type="submit" name="standard" value="Standard deviation">
 </form>
 
     </pre>

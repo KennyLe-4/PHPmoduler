@@ -1,42 +1,32 @@
 <?php 
+/*
+Lag et skjema som registrerer en ny bruker i systemet du utvikler. Skjemaet må inneholde all nødvendig 
+informasjon om brukeren (f.eks. navn, mobilnr., e-post osv.) og skal gi feilmelding dersom: 
+• obligatoriske felt mangler (hvilke felt må vises til brukeren) 
+ 
+Du kan ev. også prøve deg på feilmelding dersom:  
+• noen felt er feil utfylt (hvilke felt må vises til brukeren) – ikke krav! 
+ 
+Når  skjemaet  sendes,  skal  data  fra  skjemaet  lagres  i  en  matrise  og  skrives  ut  på  skjermen  på  en 
+oversiktlig måte  sammen med beskjed om  at  den nye  brukeren er  registrert.  Normalt ville  vi  lagret 
+denne informasjonen i en database, men det skal vi gjøre  litt senere. Lag en video hvor du beskriver og 
+demonstrerer koden. 
+*/
 
-function vaskingAvtagger($var)
+// This function removes html/php tags, and convert all characters into HTMl entities 
+function vaskingAvTagger($var)
 {
   $var = strip_tags($var);
   $var = htmlentities($var);
   return $var;
 }
-$epost = filter_var($epost, FILTER_SANITIZE_EMAIL);
-
-
-
-
+// If pressed, then the input will get washed through the function "vaskingAvTagger".
 if(isset($_REQUEST['registrer']))
 {
   $fornavn = vaskingAvtagger($_REQUEST['fnavn']);
   $etternavn = vaskingAvtagger($_REQUEST['enavn']);
-
-
-
-   /* echo "Følgende informasjon er hentet fra skjema: <br><br>";
-    echo "Navn: " .$_REQUEST['fnavn'] . " " .$_REQUEST['enavn'] . "<br>";
-    echo "E-post: " .$_REQUEST['epost'] . "<br>";
-    echo "Tlf: " . $_REQUEST['tlf'] . "<br>";  
-    echo "F.dato: " . $_REQUEST['fdato'] . "<br>"; 
-*/
-    
-    foreach($_REQUEST as $key => $value)
-    {
-        echo $key . ": "  . $value . "<br>";
 }
-
-if(filter_var($_REQUEST['epost'], FILTER_VALIDATE_EMAIL)) {
-	echo $_REQUEST['epost'] . " har gyldig e-postadresse-format.";
-} else {
-	echo $_REQUEST['epost'] . " har ikke gyldig e-postadresse-format.";
-}
-
-
+// Put all input in an array 
 $skjema = array(
   'Fornavn' => $_REQUEST['fnavn'], 
   'Etternavn' => $_REQUEST['enavn'], 
@@ -44,11 +34,10 @@ $skjema = array(
   'Telefon' => $_REQUEST['tlf'],
   'Fødelsdato' => $_REQUEST['fdato']
 );
-
+// Prints out the value inside the array
 foreach($skjema as $data => $verdi){
-  echo $verdi . "<br>";
+  echo $data . ": " . $verdi . "<br>";
 }
-
 
 ?>
 
