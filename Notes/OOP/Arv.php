@@ -15,7 +15,6 @@ public $studentnummer;
 class Laerer extends Bruker {
     public $avdeling;
     public $stilling; 
-
     public $salary; 
 }
 
