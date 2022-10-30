@@ -13,6 +13,9 @@ echo Bruker::$ant_brukere . "<br>";
 $b2 = new Bruker;
 echo Bruker::$ant_brukere . "<br>";
 
+$b3 = new Bruker;
+echo Bruker::$ant_brukere . "<br>";
+
 
 
 ?>
