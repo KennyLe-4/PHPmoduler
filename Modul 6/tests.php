@@ -15,12 +15,17 @@ echo "Student number 1: " . "<br><br>"; // Display student nr 1, and the propert
 
 $s1 = new Student('Kenny', 'Le', 'Computer science'); // Make object of the class "Student". 
 
+unset($s1); // Delete the object 
+
 echo "<br><br>";
 
 
 echo "Student number 2: " . "<br><br>"; // Display student nr 1, and the properties following.
 
-$s1 = new Student('Kamila', 'Nachajova', 'English'); // Make object of the class "Student"
+$s2 = new Student('Kamila', 'Nachajova', 'English'); // Make object of the class "Student"
+
+unset($s2); // Delete the object 
+
 
 
 

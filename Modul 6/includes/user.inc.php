@@ -18,7 +18,7 @@ Testene er kjørt på test.php filen.
 Det er lagt til flere funksjoner, som ikke blir brukt - men som jeg syntes var greit å ha. 
 */
 
-$deletedUsers = array(); // Array for deleted users
+$deletedUsers = []; // Array for deleted users
 class User {
     public function __construct($fname, $lname) { // Constructor that prints out: full name, username, register date
         $this->fname = $fname;
