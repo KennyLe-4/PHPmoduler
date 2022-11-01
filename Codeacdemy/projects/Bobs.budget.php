@@ -1,6 +1,7 @@
 <?php
 /*
 This is a project that calculate Bobs earning, savings and expenses. 
+Mainly focused on arrays 
 */
 
 $annualExpenses = [
