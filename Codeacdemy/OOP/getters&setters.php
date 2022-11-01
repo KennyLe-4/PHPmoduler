@@ -14,4 +14,3 @@ class Beverage
     }
 }
 
-$soda = new Beverage();
