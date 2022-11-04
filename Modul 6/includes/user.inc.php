@@ -84,14 +84,12 @@ public function get_registerDate() { // Function for registerDate
  * Constructor is not inherited, made new one with modification getName function. 
 */ 
 class Student extends User {
-    protected $studentID;
     protected $course; 
 
     public function __construct($fname, $lname, $course) { // Constructor that displays: first name, last name, course and register date.
 
         $this->fname = $fname;
         $this->lname = $lname;
-        // $this->studentID = $studentID; - Dont need to use this. 
         $this->course = $course;
         
            echo "Your full name is: " . $this->getName();
@@ -128,13 +126,5 @@ class Student extends User {
     { 
         return $this->access(); 
     } 
-
-    public function getStudentID() { // Get student ID
-        return $this->studentID; 
-    }
-    
-    public function setStudentID($studentID) { // Set studentID
-        return $this->studentID; 
-    }
 
 }

@@ -9,26 +9,29 @@ Your function should use a switch statement and fall through to accomplish this 
 
  function returnSeason($month) {
    switch ($month) {
-     case "December":
-     case "January":
-     case "February":
+     Case "December":
+     Case "January":
+     Case "February":
      return "winter";
-     break;
-     case "March":
-     case "April":
-     case "May":
+     Break;
+
+     Case "March":
+     Case "April":
+     Case "May":
      return "spring";
-     break;
-     case "June":
-     case "July":
-     case "August":
+     Break;
+
+     Case "June":
+     Case "July":
+     Case "August":
      return "summer";
-     break;
-     case "September":
-     case "October":
-     case "November":
+     Break;
+     
+     Case "September":
+     Case "October":
+     Case "November":
      return"fall";
-     break;
+     Break;
      
 }
    }
