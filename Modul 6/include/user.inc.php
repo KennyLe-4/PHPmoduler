@@ -28,7 +28,7 @@ class User {
             echo "<br>";
 
     
-            echo "Your username is: " . $this->user_id =  substr($fname, 0,2) . substr($lname, 0,2) . rand(0,50); // Get the first 2 letters in lname and fname and then add random nubmers to the username. // Displays username. 
+            echo "Your username is: " . $this->user_id(); // Get the first 2 letters in lname and fname and then add random nubmers to the username. // Displays username. 
             echo "<br>";
 
             echo "You got registred: " . $this->registerDate = date("Y/m/d"); // Get the register date // Todays date
@@ -63,6 +63,10 @@ public function getName() {
 protected function access() {
     return $this->admin() ? "Admin" : "User";
     
+}
+
+protected function user_id() {
+    return $this->user_id =  substr($this->fname, 0,2) . substr($this->lname, 0,2) . rand(0,50); // Get the first 2 letters in lname and fname and then add random nubmers to the username. // Displays username. 
 }
 
 private function admin() {

@@ -1,5 +1,5 @@
 <?php
-require_once('db.inc.php');
+require_once ('../Include/db.inc.php');
 
 $sql = "UPDATE users 
         SET zip = :zip, city = :city 

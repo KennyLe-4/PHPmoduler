@@ -1,6 +1,6 @@
 <?php 
 
-include './includes/user.inc.php'; // include class user
+include './include/user.inc.php'; // include class user
 
 /* Opg 3.
 *  Opprett to objekter basert på Student-klassen og kjør en metode på denne klassen 

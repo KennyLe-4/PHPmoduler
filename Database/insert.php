@@ -1,5 +1,5 @@
 <?php
-require_once('db.inc.php');
+require_once ('../Include/db.inc.php');
 
 // Mal for spørring
 $sql = "INSERT IGNORE INTO users 
@@ -16,7 +16,7 @@ $q->bindParam(':cell', $cell, PDO::PARAM_STR);
 $q->bindParam(':zip', $zip, PDO::PARAM_INT);
 $q->bindParam(':city', $city, PDO::PARAM_STR);
 
-$firstname = "Kevin";
+$firstname = "Kenny";
 $lastname = "Kola";
 $email = "syd@uia.no";
 $cell = 99887766;

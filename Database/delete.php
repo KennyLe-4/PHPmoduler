@@ -7,7 +7,7 @@ $sql = "DELETE FROM users
 $q = $pdo->prepare($sql); 
 $q->bindParam(':uid', $uid, PDO::PARAM_INT);
 
-$uid = 14;
+$uid = 15;
 
 try {
     $q->execute();
