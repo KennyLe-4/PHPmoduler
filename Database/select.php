@@ -7,7 +7,7 @@ $sql = "SELECT *
 $q = $pdo->prepare($sql);
 $q->bindParam(':city', $city, PDO::PARAM_STR);
 
-$city = "Tulleby";
+$city = "Lithuan";
 
 try {
     $q->execute();
