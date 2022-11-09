@@ -26,6 +26,7 @@ class User {
 
             echo "Your full name is: " . $this->getName();  // Get getName function 
             echo "<br>";
+
     
             echo "Your username is: " . $this->user_id(); // Get the first 2 letters in lname and fname and then add random nubmers to the username. // Displays username. 
             echo "<br>";
@@ -72,7 +73,7 @@ private function admin() {
     return $this->admin === true;
     }
 
-public function get_userID() { // Henter username
+public function get_userID() { // Henter username, vet ikke om den trengs
     return $this->user_id; 
 }
 
@@ -85,7 +86,7 @@ public function get_registerDate() { // Function for registerDate
 /* Inherited from user
  * Child class
  * Constructor is not inherited, made new one with modification getName function. 
- */ 
+*/ 
 class Student extends User {
     protected $course; 
 
@@ -99,7 +100,7 @@ class Student extends User {
            echo "<br>";
 
     
-            echo "Your username is: " . $this->user_id(); // = substr($lname, 0,2) . substr($fname, 0,2) . rand(0,50); // Get the first 2 letters in fname and lname and then add random numbers to the username. // Inherted from parent function "fullName". 
+            echo "Your username is: " . $this->user_id = substr($lname, 0,2) . substr($fname, 0,2) . rand(0,50); // Get the first 2 letters in fname and lname and then add random numbers to the username. // Inherted from parent function "fullName". 
             echo "<br>";
 
             echo "You are studying: " . $this->getCourse();
@@ -115,7 +116,7 @@ class Student extends User {
     * Lag  en  klasse  Student  som  arver  en  klasseegenskap  og en klassemetode fra klassen Bruker. Lag en 
     * klassemetode i Student-klassen som overstyrer Bruker-klassen. 
     */
-    
+
     final function getName() // final function is used to override inhertiance from parentclass (User).
     {
         return $this->fname . " " . $this->lname . " - you are registred as a student."; // Display fullName function + "you are registred as a student".
@@ -128,9 +129,6 @@ class Student extends User {
     public function getAccess() // This method gives you access to the protected method "access", from the child class - Student. 
     { 
         return $this->access(); 
-    }
-    protected function user_id() {
-        return $this->user_id =  substr($this->fname, 0,2) . substr($this->lname, 0,2) . rand(0,50); // Get the first 2 letters in lname and fname and then add random nubmers to the username. // Displays username. 
-    }
+    } 
 
 }

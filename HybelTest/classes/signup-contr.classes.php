@@ -1,21 +1,21 @@
 <?php 
-
-class SignupContr {
+include 'signup.classes.php';
+class SignupContr extends Signup  {
     private $uid; 
     private $pwd; 
     private $pwdRepeat; 
     private $email; 
 
     public function __construct($uid, $pwd, $pwdRepeat, $email) {
-        $this->$uid = $uid; 
-        $this->$pwd = $pwd; 
-        $this->$pwdRepeat = $pwdRepeat; 
-        $this->$email = $email; 
+        $this->uid = $uid; 
+        $this->pwd = $pwd; 
+        $this->pwdRepeat = $pwdRepeat; 
+        $this->email = $email; 
 
     }
 
     
-    private function signupUser() {
+    public function signupUser() {
        if($this-> emptyInput() == false) {
         echo "Empty input!";
         header("location: ../index.php?error=emptyinput");
@@ -46,7 +46,7 @@ class SignupContr {
     }
     private function emptyInput() {
         $result; 
-        if(empty($this->$uid) || empty($this->$pwd) || empty($this->$pwdRepeat) || empty($this->$email)) 
+        if(empty($this->uid) || empty($this->pwd) || empty($this->$pwdRepeat) || empty($this->$email)) 
         {
             $result =  false;
 
@@ -60,7 +60,7 @@ class SignupContr {
 
         private function invalidUid() {
             $result; 
-            if (preg_match('/^[a-z\d_]{2,20}$/i', $this->uid))
+            if (!preg_match('/^[a-z\d_]{2,20}$/i', $this->uid))
             {
                 $result =  false;
     
@@ -104,7 +104,7 @@ class SignupContr {
             
                 private function uidTakenCheck() { 
                     $result; 
-                    if (!$this->checkUser($this->$uid, $this->$email))
+                    if (!$this->checkUser($this->uid, $this->email))
                     {
         
                         $result =  false;

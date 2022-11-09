@@ -10,10 +10,11 @@ if(isset($_POST["submit"]))
     $pwdrepeat = $_POST["pwdrepeat"];
     $email = $_POST["email"];
 
-// Instanstiate SignuoContr class
-include "./HybelProjekt/classes/dbh.classes.php";
-include "./HybelProjekt/classes/signup.classes.php";
-include "./HybelProjekt/classes/signup.contr.classes.php";
+// Instanstiate SignupContr class
+include "../classes/dbh.classes.php";
+include "../classes/signup-contr.classes.php";
+include "../signup.classes.php";
+
 
 $signup = new SignupContr($uid, $pwd, $pwdRepeat, $email);
 
@@ -23,5 +24,7 @@ $signup = new SignupContr($uid, $pwd, $pwdRepeat, $email);
 $signup->signupUser(); 
 
 // Going to back to front page
+header("location: ../index.php?error=none");
     
 }
+?>

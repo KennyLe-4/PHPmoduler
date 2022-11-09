@@ -28,7 +28,7 @@ try {
 } catch (PDOException $e) {
     echo "Error querying database: " . $e->getMessage() . "<br>"; // Never do this in production
 }
-$q->debugDumpParams();
+//$q->debugDumpParams();
 
 if($pdo->lastInsertId() > 0) {
     echo "Data inserted into database, identified by UID " . $pdo->lastInsertId() . ".";
