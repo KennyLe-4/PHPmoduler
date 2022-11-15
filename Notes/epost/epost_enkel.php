@@ -1,5 +1,5 @@
 <?php 
-$til = "peter@box.no";
+$til = "kennykl@uia.no";
 $emne = "En liten hilsen";
 $melding = "Dette er en e-post";
 $fra = "spam@box.no";

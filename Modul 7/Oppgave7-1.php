@@ -28,9 +28,10 @@ try {
 //$q->debugDumpParams();
 
 $hybler = $q->fetchAll(PDO::FETCH_OBJ);
+
 echo "<table>";
         echo "<th>Id</th>";
-        echo "<th>Pris</th>";
+        echo "<th>Månedsleie</th>";
         echo "<th>Areal</th>";
         echo "<th>Antall soverom</th>";
         echo "<th>Sted</th>";
@@ -39,10 +40,10 @@ if($q->rowCount() > 0) {
     foreach($hybler as $hybel) {
         echo "<tr>"; 
         echo "<td>" . $hybel->hybel_id . "";
-        echo "<td>" . $hybel->månedsleie . " ";
-        echo "<td>" . $hybel->areal . " ";
+        echo "<td>" . $hybel->mnd_leie . "";
+        echo "<td>" . $hybel->areal . "";
         echo "<td>" . $hybel->antall_soverom . "";
-        echo "<td>" . $hybel->sted . " ";
+        echo "<td>" . $hybel->sted . "";
         echo "</tr>";
 
        
