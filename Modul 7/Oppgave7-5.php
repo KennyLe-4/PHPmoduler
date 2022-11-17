@@ -16,8 +16,8 @@ require_once ('db.inc.php');
 <?php
 $sql = "SELECT * FROM bruker_preferanser
             INNER JOIN bruker ON bruker.brukerID = bruker_preferanser.brukerID 
-            INNER JOIN preferanser ON preferanser.preferanse_id = bruker_preferanser.preferanse_id";
-            //ORDER BY preferanser.preferanser_navn";
+            INNER JOIN preferanser ON preferanser.preferanse_id = bruker_preferanser.preferanse_id
+            ORDER BY preferanser.preferanse_navn";
 
     $q = $pdo->prepare($sql);
 

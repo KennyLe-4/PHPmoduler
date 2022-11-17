@@ -22,7 +22,7 @@ $q = $pdo->prepare($sql);
 try {
     $q->execute();
 } catch (PDOException $e) {
-    echo "Error querying database: " . $e->getMessage() . "<br>"; // Never do this in production
+    echo "Error querying database: "; // . $e->getMessage() . "<br>"; // Never do this in production
 }
 //$q->debugDumpParams();
 
@@ -46,7 +46,7 @@ if($q->rowCount() > 0) {
         echo "</tr>";
     }
 } else {
-    echo "The query resulted in an empty result set.";
+    echo "The query resulted in an empty hybler"; // Fikse feilkode
 }
 echo "</table>";
 

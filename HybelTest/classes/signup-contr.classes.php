@@ -46,9 +46,10 @@ class SignupContr extends Signup  {
     }
     private function emptyInput() {
         $result; 
-        if(empty($this->uid) || empty($this->pwd) || empty($this->$pwdRepeat) || empty($this->$email)) 
+
+        if(empty($this->uid) || empty($this->pwd) || empty($this->pwdRepeat) || empty($this->email)) 
         {
-            $result =  false;
+            $result = false;
 
         } else {
 
@@ -60,6 +61,7 @@ class SignupContr extends Signup  {
 
         private function invalidUid() {
             $result; 
+
             if (!preg_match('/^[a-z\d_]{2,20}$/i', $this->uid))
             {
                 $result =  false;

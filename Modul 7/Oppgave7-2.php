@@ -24,8 +24,9 @@ if (isset($_REQUEST['registrer'])) {
     try {
         $q->execute();
     } catch (PDOException $e) {
-        echo "Error querying database: " . $e->getMessage() . "<br>"; // Never do this in production
+        echo "Error querying database: " (); //. $e->getMessage() . "<br>"; // Never do this in production
     }
+
     //$q->debugDumpParams();
 
     //Sjekker om noe er satt inn, returnerer UID.
