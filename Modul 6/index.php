@@ -17,13 +17,17 @@
     <h1>Velkommen til siden min</h1>
     <h2>Nedenfor kan du se oppgavene mine</h2>
 
-    <a href="tests.php">Oppgave 1-3 - lage klasse, arv og tilgangskontroll og automatisering.</a>
-    <p>Koden ligger i mappen "includes" under filnavnet "user.inc.php". </p>
+    <a href="Oppgave7-1.php">Oppgave 1 - Listing av hybler</a></li>
     <br>
-    <a href="Opg4.php">Oppgave 4 - Planlegging av system </a>
+    <a href="Oppgave7-2.php">Oppgave 2 - Registrering av ny bruker</a>
     <br>
-    <a href="Opg5.php">Oppgave 5 - lynmeldinger</a>
-
+    <a href="Oppgave7-3.php">Oppgave 3 - sikkerhetskopi </a>
+    <br>
+    <a href="Oppgave7-4.php">Oppgave 4 - datostyring </a>
+    <br>
+    <a href="Oppgave7-5.php">Oppgave 5 - gruppering</a>
+    <br>
+    <a href="insert.hybler.php">INSERT</a>
 </div>
 <body>
     

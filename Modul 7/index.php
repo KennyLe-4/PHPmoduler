@@ -15,7 +15,8 @@
 <div class = "center"> 
     <h1>Velkommen til siden min</h1>
     <h2>Nedenfor kan du se oppgavene mine</h2>
-    <a href="Oppgave7-1.php">Oppgave 1 - Listing av hybler</a>
+
+    <a href="Oppgave7-1.php">Oppgave 1 - Listing av hybler</a></li>
     <br>
     <a href="Oppgave7-2.php">Oppgave 2 - Registrering av ny bruker</a>
     <br>
@@ -25,10 +26,6 @@
     <br>
     <a href="Oppgave7-5.php">Oppgave 5 - gruppering</a>
     <br>
-    <a href="insert.hybler.php">INSERT</a>
-
-
-
 </div>
 <body>
     

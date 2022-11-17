@@ -19,7 +19,6 @@ $sql = "SELECT *
 
 $q = $pdo->prepare($sql);
 
-
 try {
     $q->execute();
 } catch (PDOException $e) {
@@ -45,8 +44,6 @@ if($q->rowCount() > 0) {
         echo "<td>" . $hybel->antall_soverom . "";
         echo "<td>" . $hybel->sted . "";
         echo "</tr>";
-
-       
     }
 } else {
     echo "The query resulted in an empty result set.";

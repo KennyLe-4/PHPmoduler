@@ -51,14 +51,14 @@ if (isset($_REQUEST['registrer'])) {
 <body>
     <pre>
     <div class="d-flex justify-content-center">
-    <form method="post" action="./index.php">
+    <form method="post" action="">
         <h1>Registering av bruker</h1>
     <div class="form-group">
       Fornavn: <input type="text" name="fnavn" placeholder="Fornavn" required><br>
       Etternavn: <input type="text" name="enavn" placeholder="Etternavn" required><br>
       E-post: <input type="text" name="epost" placeholder="E-post" required><br>
       Telefon: <input type="text" name="tlf" placeholder="Mobilnummer" required><br>
-      Fødselsdato: <input type="date" id ="birthdate" name="fdate" placeholder="2001-05-05" required><br>
+      Fødselsdato: <input type="date" id ="birthdate" name="fdate"  equired><br>
       <input type="submit" class="btn btn-primary" name="registrer" value="Registrér">
       
       

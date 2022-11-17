@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Gjøres etterhvert</p>
+    <h3>Back up database via phpMyAdmin</h3>
+    <p>1. Gå på "export" for å exporte databasen.</p>
+    <p>2. Lagre filen et sted du finner den på pcn</p>
+    <p>3. Demonstrere ved å slette database. Lage ny database med samme navn som den du exportet. Deretter bruke import funksjonen og legge til filen.</p>
+    <p>4. Kan demonstrer ved å slette og kjøre back up av databasen "test"</p>
+
+
+
 </body>
 </html>
