@@ -61,12 +61,28 @@ function Decipher($input, $key)
 	return Cipher($input, $key, false);
 }
 
-$text = "Hemmelig";
-$cipherText = Encipher($text, "cipher");
+
+$text = $_POST['passord'];
+$cipherText = Encipher($_POST-, "cipher");
 $plainText = Decipher($cipherText, "cipher");
 
 echo "This is plain text: " . $plainText . "<br>";
 echo "This is cipher text: ". $cipherText . "<br>";
 
-
 ?> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form method="post">
+		<input type="text placeholder="Passord" name="passord">
+		<input type="submit" name="passord" value="passord">
+	</form>
+</body>
+</html>
