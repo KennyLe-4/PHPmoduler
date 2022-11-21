@@ -1,4 +1,6 @@
 <?php
+session_start();
+
     define('DB_HOST', 'localhost');
     define('DB_USER', 'root');
     define('DB_PASS', '');
@@ -11,5 +13,6 @@
         echo 'Error connecting to database: ' . $e->getMessage(); // Never do this in production
     }
 ?>
+
 
 

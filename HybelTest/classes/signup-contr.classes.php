@@ -77,6 +77,7 @@ class SignupContr extends Signup  {
             
         private function invalidEmail() {
             $result; 
+
             if (!filter_var($this->email, FILTER_VALIDATE_EMAIL)) 
             {
                 $result =  false;
@@ -108,9 +109,8 @@ class SignupContr extends Signup  {
                     $result; 
                     if (!$this->checkUser($this->uid, $this->email))
                     {
-        
                         $result =  false;
-            
+                        
                     } else {
             
                         $result = true;

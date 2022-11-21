@@ -20,7 +20,6 @@ if (isset($_POST['logginn'])) {
 
     //$input = 'test123';
     //echo password_hash('test123', PASSWORD_DEFAULT);
-
     //$hashedPwdInDb = password_hash('test123', PASSWORD_DEFAULT);
 
 
@@ -33,7 +32,7 @@ if (isset($_POST['logginn'])) {
             $_SESSION['enavn'] = $medlemmer->enavn;
             $_SESSION['ID'] = $medlemmer->ID;
 
-            header("Location: session.php"); // Liten test på hvordan det kan se ut. 
+            header("Location: Velkommen.php"); // Liten test på hvordan det kan se ut. 
         } else {
             echo "Feil passord";
         }

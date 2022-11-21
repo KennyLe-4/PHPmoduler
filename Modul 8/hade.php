@@ -1,10 +1,3 @@
-<?php
-    session_start();
-    if (session_destroy()){
-        header("location:hade.php");
-    }
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

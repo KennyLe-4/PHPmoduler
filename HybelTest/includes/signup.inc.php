@@ -18,7 +18,6 @@ include "../signup.classes.php";
 $signup = new SignupContr($uid, $pwd, $pwdRepeat, $email);
 
 
-
 // Running error handlers and user signup
 $signup->signupUser(); 
 
