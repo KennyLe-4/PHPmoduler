@@ -2,9 +2,9 @@
 require_once('db.inc.php');
 
 $sql = "INSERT INTO bruker 
-        (fnavn, enavn, epost, tlf, fdate) 
+        (fnavn, enavn, epost, tlf, fdate,) 
         VALUES 
-        (:fnavn, :enavn, :epost, :tlf, :fdate)";
+        (:fnavn, :enavn, :epost, :tlf, :fdate,)";
 
 $q = $pdo->prepare($sql);
 
@@ -14,12 +14,16 @@ $q->bindParam(':epost', $epost, PDO::PARAM_STR);
 $q->bindParam(':tlf', $telefon, PDO::PARAM_STR);
 $q->bindParam(':fdate', $fdato, PDO::PARAM_STR);
 
+
+
 if (isset($_REQUEST['registrer'])) {
     $firstname = $_REQUEST['fnavn'];
     $lastname = $_REQUEST['enavn'];
     $epost = $_REQUEST['epost'];
     $telefon = $_REQUEST['tlf'];
     $fdato = $_REQUEST['fdate']; 
+
+
 
     try {
         $q->execute();
@@ -59,7 +63,8 @@ if (isset($_REQUEST['registrer'])) {
       Etternavn: <input type="text" name="enavn" placeholder="Etternavn" required><br>
       E-post: <input type="text" name="epost" placeholder="E-post" required><br>
       Telefon: <input type="text" name="tlf" placeholder="Mobilnummer" required><br>
-      Fødselsdato: <input type="date" id ="birthdate" name="fdate"  equired><br>
+      Fødselsdato: <input type="date" id ="birthdate" name="fdate"  required><br>
+      Passord: <input type=password name=passord placeholder="Password required"><br>
       <input type="submit" class="btn btn-primary" name="registrer" value="Registrér">
       
       
