@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <a href= "lastned.php"> Last ned </a> 
+    <h1>Hade bra</h1>
 </body>
 </html>

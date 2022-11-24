@@ -4,7 +4,7 @@ session_start();
     define('DB_HOST', 'localhost');
     define('DB_USER', 'root');
     define('DB_PASS', '');
-    define('DB_NAME', 'modul7');
+    define('DB_NAME', 'modul8');
     $dsn = 'mysql:dbname=' . DB_NAME . ';host=' . DB_HOST; // Driver is set here
 
     try {
