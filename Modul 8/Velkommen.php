@@ -13,7 +13,8 @@ require_once('db.inc.php');
 </head>
 <body>
 <h1>Velkommen <?php echo $_SESSION['fnavn']?>, du er pålogget!</h1>
-    
+
+    <a class="minProfil" href="minProfil.php">Se din profil</a>
     <a class="loggUt" href="loggUt.php">Logg ut</a>
 
 </body>

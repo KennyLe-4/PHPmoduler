@@ -1,12 +1,13 @@
 <?php 
+include ('db.inc.php');
 /*Oppgave 3: last opp fil
 /Lag et script som laster opp et profilbilde av en bruker til en katalog du bestemmer selv. Filene må få 
 /navn {ID}.{filtype} der ID er PRIMARY_KEY for brukeren. Opplastingen skal kun akseptere jpg- og png-
 /format og bildene kan ikke være større enn 2MB. Feilmeldinger må vises for brukeren. Bildet skal vises 
 /i profilen til brukeren. 
 */
-
-
+?>
+<?php
 /* Form submit? */
 if (isset($_REQUEST['upload-send'])) 
 {
@@ -25,6 +26,7 @@ if (isset($_REQUEST['upload-send']))
     if (is_uploaded_file($_FILES['upload-file']['tmp_name'])) 
     {
         /* Collecting information about file */
+        $file_name = $_FILES['upload-file']['name'];
         $file_type = $_FILES['upload-file']['type'];
         $file_size = $_FILES['upload-file']['size'];
         
@@ -54,6 +56,7 @@ if (isset($_REQUEST['upload-send']))
         /* If the file already exists for some reason */
         do {
             $filename  = substr(md5(date('YmdHis')), 0, 5) . '.' . $suffix;
+            $filename = $_POST['navn']. '.' . $suffix; 
         }
         while(file_exists($dir . $filename));
         
