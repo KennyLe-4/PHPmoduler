@@ -1,3 +1,11 @@
 Dette er oppgave 2 - loggfunksjon:
 Data was written to file: 24.11.2022 kl. 16:19 
 Filename: m9.txt 
+Data was written to file: 24.11.2022 kl. 20:46 
+Filename: m9.txt 
+Data was written to file: 24.11.2022 kl. 20:46 
+Filename: m9.txt 
+Data was written to file: 24.11.2022 kl. 20:46 
+Filename: m9.txt 
+Data was written to file: 24.11.2022 kl. 20:46 
+Filename: m9.txt 

@@ -16,11 +16,11 @@
     <h1>Velkommen til siden min</h1>
     <h2>Nedenfor kan du se oppgavene mine</h2>
 
-    <a href="Oppgave9-1.php">Oppgave 1 - Lese informasjon av filer</a></li>
+    <a href="Oppgave9-1.php">Oppgave 1 - Lese informasjon av filer</a>
     <br>
     <a href="Oppgave9-2.php">Oppgave 2 - Loggfunksjon</a>
     <br>
-    <a href="Modul9.3/MinProfil.php">Oppgave 3 - Last opp fil</a>
+    <a href="Oppgave9-3.php">Oppgave 3 - Last opp fil</a>
     <br>
     <a href="Oppgave9-4.php">Oppgave 4 - Nedlasting av fil</a>
     <br>
