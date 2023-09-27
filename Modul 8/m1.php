@@ -1,4 +1,5 @@
 <?php
+
 /* Prøvd å logge inn? */
 
 if (isset($_POST['logginn'])) {
